@@ -1,15 +1,23 @@
-/**
- * @param n integer sequence place request
- * @return fibb nth term in the fibonacci sequence
+import java.util.*;
+/* 
+ * Program takes an integer and prints out the nth term of the
+ * Fibonacci sequence.
+ * 
+ * @author Alex Burkey
  */
-public int fibonacciTerm(int n)
+
+
+public class Fibonacci()
 {
-	int fibb = 1;
-	int lastFibb = 1;
-	for (i = 1; i != n; i++)
+	public void fibonacciTerm(int lastTerm)
 	{
-		fibb = fibb + lastFibb;
-		lastfibb = fibb - lastFibb;
+		int fibb = 1;
+		int lastFibb = 1;
+		for (i = 1; i != lastTerm; i++)
+		{
+			fibb = fibb + lastFibb;
+			lastfibb = fibb - lastFibb;
+		}
+		System.out.println(fibb);
 	}
-	System.out.println(fibb);
 }
