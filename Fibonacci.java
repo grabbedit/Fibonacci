@@ -5,8 +5,6 @@ import java.util.*;
  * 
  * @author Alex Burkey
  */
-
-
 public class Fibonacci()
 {
 	public void fibonacciTerm(int lastTerm)
